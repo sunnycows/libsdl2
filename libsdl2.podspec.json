@@ -1,0 +1,89 @@
+{
+  "name": "libsdl2",
+  "version": "2.0.4",
+  "summary": "Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.",
+  "homepage": "http://zziplib.sourceforge.net",
+  "license": {
+    "type": "ZLIB license",
+    "file": "COPYING.txt"
+  },
+  "module_name": "SDL2",
+  "authors": {
+    "Sam Lantinga": "slouken@libsdl.org"
+  },
+  "source": {
+    "http": "https://www.libsdl.org/release/SDL2-2.0.4.zip"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": "5.1.1"
+  },
+  "source_files": [
+    "SDL2-2.0.4/src/thread/generic/SDL_syssem.c",
+    "SDL2-2.0.4/include/*.h",
+    "SDL2-2.0.4/src/**/*.{c,h,m}"
+  ],
+  "prepare_command": "sed -i -E 's|exit_status =|//exit_status =|g' SDL2-2.0.4/src/video/uikit/SDL_uikitappdelegate.m",
+  "header_dir": "include",
+  "exclude_files": [
+    "SDL2-2.0.4/include/SDL_test*",
+    "SDL2-2.0.4/include/SDL_egl.h",
+    "SDL2-2.0.4/include/SDL_opengl_glext.h",
+    "SDL2-2.0.4/include/SDL_opengles2_gl2.h",
+    "SDL2-2.0.4/include/SDL_opengles2_gl2ext.h",
+    "SDL2-2.0.4/include/SDL_alsa_audio.h",
+    "SDL2-2.0.4/include/SDL_config_android.h",
+    "SDL2-2.0.4/include/SDL_config_macosx.h",
+    "SDL2-2.0.4/include/SDL_config_minimal.h",
+    "SDL2-2.0.4/include/SDL_config_pandora.h",
+    "SDL2-2.0.4/include/SDL_config_psp.h",
+    "SDL2-2.0.4/include/SDL_config_windows.h",
+    "SDL2-2.0.4/include/SDL_config_winrt.h",
+    "SDL2-2.0.4/include/SDL_config_wiz.h",
+    "SDL2-2.0.4/src/thread/pthread/SDL_syssem.c",
+    "SDL2-2.0.4/src/thread/generic/SDL_syscond.c",
+    "SDL2-2.0.4/src/thread/generic/SDL_sysmutex.c",
+    "SDL2-2.0.4/src/thread/generic/SDL_systhread.c",
+    "SDL2-2.0.4/src/thread/generic/SDL_systls.c",
+    "SDL2-2.0.4/src/**/android/*",
+    "SDL2-2.0.4/src/**/haiku/*",
+    "SDL2-2.0.4/src/**/nacl/*",
+    "SDL2-2.0.4/src/**/pandora/*",
+    "SDL2-2.0.4/src/**/raspberry/*",
+    "SDL2-2.0.4/src/**/vivante/*",
+    "SDL2-2.0.4/src/**/windows/*",
+    "SDL2-2.0.4/src/**/psp/*",
+    "SDL2-2.0.4/src/**/wayland/*",
+    "SDL2-2.0.4/src/**/x11/*",
+    "SDL2-2.0.4/src/**/emscripten/*",
+    "SDL2-2.0.4/src/**/winrt/*",
+    "SDL2-2.0.4/src/**/direct3d*",
+    "SDL2-2.0.4/src/audio/alsa",
+    "SDL2-2.0.4/src/audio/arts",
+    "SDL2-2.0.4/src/audio/bsd",
+    "SDL2-2.0.4/src/audio/directsound",
+    "SDL2-2.0.4/src/audio/disk",
+    "SDL2-2.0.4/src/audio/dsp",
+    "SDL2-2.0.4/src/audio/esd",
+    "SDL2-2.0.4/src/audio/fusionsound",
+    "SDL2-2.0.4/src/audio/nas",
+    "SDL2-2.0.4/src/audio/paudio",
+    "SDL2-2.0.4/src/audio/qsa",
+    "SDL2-2.0.4/src/audio/pulseaudio",
+    "SDL2-2.0.4/src/audio/sndio",
+    "SDL2-2.0.4/src/audio/sun",
+    "SDL2-2.0.4/src/audio/winm",
+    "SDL2-2.0.4/src/audio/xaudio2",
+    "SDL2-2.0.4/src/main/dummy/SDL_dummy_main.c",
+    "SDL2-2.0.4/src/test/*"
+  ],
+  "private_header_files": [
+    "SDL2-2.0.4/src/**/*.h"
+  ],
+  "xcconfig": {
+  },
+  "compiler_flags": [
+    "-I${PODS_ROOT}/src/libm"
+  ],
+  "libraries": "z"
+}
