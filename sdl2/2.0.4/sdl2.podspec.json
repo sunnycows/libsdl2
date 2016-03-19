@@ -83,7 +83,7 @@
     "src/test/*"
   ],
   "private_header_files": [
-    "src/**/*.h"
+    "src/video/uikit/SDL_*.h"
   ],
   "xcconfig": {
   },
