@@ -3,6 +3,7 @@
   "version": "2.0.4",
   "summary": "Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.",
   "homepage": "http://zziplib.sourceforge.net",
+  "description": "sed -i -E 's|exit_status =|//exit_status =|g' SDL2-2.0.4/src/video/uikit/SDL_uikitappdelegate.m;",
   "license": {
     "type": "ZLIB license",
     "file": "COPYING.txt"
@@ -18,7 +19,7 @@
   "platforms": {
     "ios": "5.1"
   },
-  "prepare_command": "sed -i -E 's|exit_status =|//exit_status =|g' SDL2-2.0.4/src/video/uikit/SDL_uikitappdelegate.m;mv SDL2-2.0.4/* .",
+  "prepare_command": "mv SDL2-2.0.4/* .",
   "source_files": [
     "src/thread/generic/SDL_syssem.c",
     "include/*.h",
