@@ -66,6 +66,7 @@
     "src/**/alsa/*",
     "src/**/arts/*",
     "src/**/bsd/*",
+    "src/**/cocoa/*",
     "src/**/directsound/*",
     "src/**/disk/*",
     "src/**/dsp/*",
@@ -73,15 +74,16 @@
     "src/**/fusionsound/*",
     "src/**/nas/*",
     "src/**/paudio/*",
+    "src/**/qnx/*",
     "src/**/qsa/*",
     "src/**/pulseaudio/*",
     "src/**/sndio/*",
     "src/**/sun/*",
+    "src/**/uikit/SDL_uikitappdelegate*",
     "src/**/winmm/*",
     "src/**/xaudio2/*",
     "src/main/dummy/SDL_dummy_main.c",
-    "src/test/*",
-    "src/video/ukit/SDL_uikitappdelegate*"
+    "src/test/*"
   ],
   "private_header_files": [
     "src/video/uikit/SDL_*.h"
