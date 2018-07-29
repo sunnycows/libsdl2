@@ -19,7 +19,7 @@
   "platforms": {
     "ios": "5.1"
   },
-  "prepare_command": "mv SDL2-2.0.8/* .",
+  "prepare_command": "mv SDL2-2.0.8/* . \nsed -i -E 's|#import \"SDL_uikitappdelegate.h\"|//#import \"SDL_uikitappdelegate.h\"|g' src/video/uikit/*.m",
   "source_files": [
     "src/thread/generic/SDL_syssem.c",
     "include/*.h",
