@@ -83,7 +83,8 @@
     "src/**/winmm/*",
     "src/**/xaudio2/*",
     "src/main/dummy/SDL_dummy_main.c",
-    "src/test/*"
+    "src/test/*",
+    "src/hidapi/testgui/mac_support_cocoa.m",
   ],
   "private_header_files": [
     "src/video/uikit/SDL_*.h"
