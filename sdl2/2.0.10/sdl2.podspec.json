@@ -1,6 +1,6 @@
 {
   "name": "sdl2",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "summary": "Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.",
   "homepage": "http://zziplib.sourceforge.net",
   "description": "SDL_uikitappdelegate is not built with the framework therefore main is not automatically called.",
@@ -13,13 +13,13 @@
     "Sam Lantinga": "slouken@libsdl.org"
   },
   "source": {
-    "http": "https://www.libsdl.org/release/SDL2-2.0.9.zip"
+    "http": "https://www.libsdl.org/release/SDL2-2.0.10.zip"
   },
   "requires_arc": true,
   "platforms": {
     "ios": "5.1"
   },
-  "prepare_command": "mv SDL2-2.0.9/* . \nsed -i -E 's|#import \"SDL_uikitappdelegate.h\"|//#import \"SDL_uikitappdelegate.h\"|g' src/video/uikit/*.m",
+  "prepare_command": "mv SDL2-2.0.10/* . \nsed -i -E 's|#import \"SDL_uikitappdelegate.h\"|//#import \"SDL_uikitappdelegate.h\"|g' src/video/uikit/*.m",
   "source_files": [
     "src/thread/generic/SDL_syssem.c",
     "include/*.h",
